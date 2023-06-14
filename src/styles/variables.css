@@ -1,0 +1,61 @@
+:root {
+  /* FONT COLORS */
+
+  /** primary font **/
+  --color-font-primary: hsl(0, 0%, 1%);
+
+  /** secondary font **/
+  --color-font-secondary: hsl(0, 0%, 28%);
+
+  /** CTA font **/
+  --color-font-cta: #fff4f4;
+
+  /* PADDINGS */
+  --padding-s: 0.5rem;
+  --padding-m: 1rem;
+
+  /* BORDER COLORS */
+  --border-color-input: 1px solid hsl(231, 28%, 95%);
+  --border-color-input-error: 1px solid hsl(0, 100%, 67%);
+  --border-color-input-active: 1px solid hsl(0, 0%, 0%);
+
+  /* BACKGROUND COLORS */
+  --bg-color-input: hsl(0, 0%, 95%);
+  --bg-color-button-cta: hsl(5, 89%, 37%);
+  --bg-color-button-cta-hover: hsl(5, 75%, 46%);
+  --bg-color-button-secondary: #f2cb07;
+  --bg-color-button-secondary-hover: #fddc38;
+
+  /* SHADOWS */
+  --box-shadow-input: 0px 2px 6px rgba(19, 18, 66, 0.07);
+  --box-shadow-button-cta: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+  --box-shadow-button-secondary: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+  --box-shadow-card: 0px 0px 1px rgba(12, 26, 75, 0.24),
+    0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+
+  /* FONTS */
+
+  /** font family **/
+  --font-family-karla-light: 'Karla-Light', sans-serif; /* h1 h2 h4*/
+  --font-family-karla-regular: 'Karla-Regular', sans-serif; /* p */
+  --font-family-karla-medium: 'Karla-Medium', sans-serif; /* h3 h5 h6*/
+
+  /** font weight **/
+  --font-weight-light: 300; /* p */
+  --font-weight-regular: 400; /* h1 h2 h4 p(hover) xxxs*/
+  --font-weight-medium: 500; /* h3 h5 h6*/
+
+  /** font size **/
+  --font-size-xs: 1rem; /* p */
+  --font-size-s: 0.75rem; /* h6 */
+  --font-size-m: 1.125rem; /* h5 */
+  --font-size-l: 1.5rem; /* h4 */
+  --font-size-xl: 2.25rem; /* h3 */
+  --font-size-xxl: 4rem; /* h2 */
+  --font-size-xxxl: 4.5rem; /* h1 */
+
+  /* BORDER RADIUS */
+  --border-none: 0px;
+  --border-m: 16px;
+  --border-l: 100px;
+}

@@ -1,0 +1,19 @@
+/* ------ FONTS ------ */
+
+@font-face {
+  font-family: 'Karla', sans-serif;
+  src: local('Karla-Medium'),
+    url(../../public/assets/fonts/Karla-Medium.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: 'Karla', sans-serif;
+  src: local('Karla-Regular'),
+    url(../../public/assets/fonts/Karla-Regular.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: 'Karla', sans-serif;
+  src: local('Karla-Light'),
+    url(../../public/assets/fonts/Karla-Light.ttf) format(truetype);
+}
