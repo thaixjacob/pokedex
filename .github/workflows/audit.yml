@@ -14,7 +14,7 @@ jobs:
       - name: ❓ Check if .editorconfig exists
         uses: andstor/file-existence-action@v1
         with:
-          files: ".editorconfig"
+          files: '.editorconfig'
 
       - name: ✅ EditorConfig validation
         uses: snow-actions/eclint@v1.0.1
@@ -22,7 +22,7 @@ jobs:
       - name: 🙈 Ensure node_modules is ignored by Git
         uses: dkershner6/gitignore-parser@v1
         with:
-          must_deny: "node_modules"
+          must_deny: 'node_modules'
 
       - name: 💾 Install modules
         run: npm ci
@@ -30,8 +30,8 @@ jobs:
       - name: 📏 Check commit message length
         uses: gsactions/commit-message-checker@v1
         with:
-          pattern: "^[^#].{10,74}"
-          error: "The commit message length must be between 10 and 74"
-          excludeDescription: "true"
-          excludeTitle: "true"
-          checkAllCommitMessages: "true"
+          pattern: '^[^#].{10,74}'
+          error: 'The commit message length must be between 10 and 74'
+          excludeDescription: 'true'
+          excludeTitle: 'true'
+          checkAllCommitMessages: 'true'
