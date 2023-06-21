@@ -1,11 +1,12 @@
 import React from 'react';
-import './App.css';
+
+import { RouterProvider } from 'react-router-dom';
+import { router } from './app/router/router';
 
 function App() {
   return (
     <div className="App">
-      <img src="/assets/images/pokedex-logo.svg" alt="Pokédex logo"></img>
-      <h1>Coming soon!</h1>
+      <RouterProvider router={router} />
     </div>
   );
 }
