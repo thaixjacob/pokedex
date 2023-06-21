@@ -23,8 +23,10 @@
   --bg-color-input: hsl(0, 0%, 95%);
   --bg-color-button-cta: hsl(5, 89%, 37%);
   --bg-color-button-cta-hover: hsl(5, 75%, 46%);
-  --bg-color-button-secondary: #f2cb07;
-  --bg-color-button-secondary-hover: #fddc38;
+  --bg-color-button-secondary: hsl(50, 94%, 49%);
+  --bg-color-button-secondary-hover: hsl(50, 98%, 61%);
+  --bg-layout: linear-gradient(180deg, #f5db13 0%, #f2b807 100%);
+  --bg-navbar: hsl(53, 92%, 52%);
 
   /* SHADOWS */
   --box-shadow-input: 0px 2px 6px rgba(19, 18, 66, 0.07);
