@@ -1,0 +1,9 @@
+.temporally-homepage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(9, 9, 144);
+  font-family: var(--font-family-karla-light);
+}
