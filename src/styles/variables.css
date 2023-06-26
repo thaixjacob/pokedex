@@ -24,8 +24,9 @@
   --bg-color-button-cta: hsl(5, 89%, 37%);
   --bg-color-button-cta-hover: hsl(5, 75%, 46%);
   --bg-color-button-secondary: hsl(50, 94%, 49%);
-  --bg-color-button-secondary-hover: hsl(50, 98%, 61%);
+  --bg-color-button-secondary-hover: hsl(50, 97%, 45%);
   --bg-layout: linear-gradient(180deg, #f5db13 0%, #f2b807 100%);
+  --bg-layout-404: hsl(5, 69%, 52%);
   --bg-navbar: hsl(53, 92%, 52%);
 
   /* SHADOWS */
@@ -46,6 +47,7 @@
   --font-weight-light: 300; /* p */
   --font-weight-regular: 400; /* h1 h2 h4 p(hover) xxxs*/
   --font-weight-medium: 500; /* h3 h5 h6*/
+  --font-weight-large: 700; /* h1 error*/
 
   /** font size **/
   --font-size-xs: 1rem; /* p */
@@ -55,6 +57,7 @@
   --font-size-xl: 2.25rem; /* h3 */
   --font-size-xxl: 4rem; /* h2 */
   --font-size-xxxl: 4.5rem; /* h1 */
+  --font-size-error: 31.25rem; /* 404 error */
 
   /* BORDER RADIUS */
   --border-none: 0px;
