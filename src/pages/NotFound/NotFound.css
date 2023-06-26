@@ -1,0 +1,128 @@
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg) scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.notfound-container {
+  padding: 2rem;
+  background-color: var(--bg-layout-404);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.notfound-error {
+  position: relative;
+}
+
+.notfound-error img {
+  max-width: 60%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  animation: rotateImage 1s ease-out;
+  overflow: hidden;
+}
+
+.notfound-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.notfound-text {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: min(calc(35vw + 2rem), 30rem);
+  font-family: var(--font-family-karla-light);
+  font-weight: var(--font-weight-large);
+  letter-spacing: 0.25rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notfound-info {
+  padding: 24px;
+  color: #0f0e0e;
+  font-size: var(--font-size-l);
+  font-family: var(--font-family-karla-light);
+  font-weight: 700;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.notfound-container .button {
+  display: block;
+  color: var(--color-font-primary);
+  min-width: 50%;
+  text-align: center;
+  border-radius: 100px;
+  background: #f2cb07;
+  box-shadow: 0px -9px 0px 0px rgba(0, 0, 0, 0.18) inset;
+  margin-top: 48px;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  font-family: var(--font-family-karla-regular);
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+
+  /* Position */
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* Centralizar o botão horizontalmente */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.notfound-container .button:hover {
+  font-family: var(--font-family-karla-medium);
+  background-color: var(--bg-color-button-secondary-hover);
+}
+
+@media (min-width: 700px) {
+  .notfound-container {
+    padding: 0;
+  }
+
+  .notfound-error {
+    padding: 0;
+  }
+
+  .notfound-container .button {
+    min-width: 20%;
+    position: static;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin-top: 48px;
+  }
+
+  .notfound-info {
+    padding-top: 32px;
+  }
+}
